@@ -117,7 +117,7 @@ public class TabelaDAO {
             if (linhasAfetadas > 0) {
                 System.out.println("Objeto com sucwaao com sucesso!");
             } else {
-                System.out.println("Nenhum objeto foi atualizado. Verifique se o ID é válido.");
+                System.out.println("Nenhum objeto foi atualizadose o ID é válido.");
             }
         } catch (SQLException e) {
             e.printStackTrace();
