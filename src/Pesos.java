@@ -3,20 +3,21 @@ public class Pesos {
     private double pesoQualidade;
     private double pesoAvaliacao;
     private double pesoNota;
-    private int idCriterio;
+
 
     public Pesos(double pesoQualidade, double pesoAvaliacao, double pesoNota) {
-        this.id = id;
+
         this.pesoQualidade = pesoQualidade;
         this.pesoAvaliacao = pesoAvaliacao;
         this.pesoNota = pesoNota;
-        this.idCriterio = idCriterio;
+
     }
 
     // Getters
     public int getId() {
         return id;
     }
+
 
     public double getPesoQualidade() {
         return pesoQualidade;
@@ -30,9 +31,7 @@ public class Pesos {
         return pesoNota;
     }
 
-    public int getIdCriterio() {
-        return idCriterio;
-    }
+
 
     // Setters
     public void setId(int id) {
@@ -51,7 +50,5 @@ public class Pesos {
         this.pesoNota = pesoNota;
     }
 
-    public void setIdCriterio(int idCriterio) {
-        this.idCriterio = idCriterio;
-    }
+
 }

@@ -1,21 +1,34 @@
 public class Comparacao {
     private int id;
+    private String nome_objeto;
     private int idObjeto;
     private int idCriterio;
-    private int idPeso;
+    private int idPesos;
     private double resultado;
 
-    public Comparacao(int id, int idObjeto, int idCriterio, int idPeso, double resultado) {
+
+
+
+
+    public Comparacao(int id, String nome_objeto, int idObjeto, int idCriterio, int idPesos, double resultado) {
         this.id = id;
+        this.nome_objeto = nome_objeto;
         this.idObjeto = idObjeto;
         this.idCriterio = idCriterio;
-        this.idPeso = idPeso;
+        this.idPesos = idPesos;
         this.resultado = resultado;
+
     }
 
-    public static boolean isEmpty() {
-        return true;
+    public int getIdPesos() {
+        return idPesos;
     }
+
+    public void setIdPesos(int idPesos) {
+        this.idPesos = idPesos;
+    }
+
+
 
 
 
@@ -30,6 +43,13 @@ public class Comparacao {
     public int getIdObjeto() {
         return idObjeto;
     }
+    public String getNome_objeto(){
+        return nome_objeto;
+    }
+
+    public void setNome_objeto(String nome_objeto) {
+        this.nome_objeto = nome_objeto;
+    }
 
     public void setIdObjeto(int idObjeto) {
         this.idObjeto = idObjeto;
@@ -43,13 +63,10 @@ public class Comparacao {
         this.idCriterio = idCriterio;
     }
 
-    public int getIdPeso() {
-        return idPeso;
-    }
 
-    public void setIdPeso(int idPeso) {
-        this.idPeso = idPeso;
-    }
+
+
+
 
     public double getResultado() {
         return resultado;
