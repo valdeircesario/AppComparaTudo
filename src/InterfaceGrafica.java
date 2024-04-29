@@ -89,7 +89,7 @@ public class InterfaceGrafica extends JFrame {
 
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(800, 150);
+        setSize(550, 300);
         setLocationRelativeTo(null);
         setLayout(new FlowLayout());
 
@@ -595,7 +595,7 @@ public class InterfaceGrafica extends JFrame {
 
 
                     //INSERIR O OBJETO  NA TABELA( OBJETO1)
-                    String nomeObjeto1 = JOptionPane.showInputDialog(null, "Digite o Nome do Primeiro Objeto:");
+                    String nomeObjeto1 = JOptionPane.showInputDialog(null, "Digite o nome do primeiro objeto:");
                     Objeto objeto = new Objeto(nomeObjeto1);
                     TabelaDAO.inserirObjetoNoBanco(objeto);
 
@@ -603,28 +603,28 @@ public class InterfaceGrafica extends JFrame {
 
                     // INSERIR OS CRITERIOS NA TABELA DE CRITERIO( OBJETO1)
 
-                    double qualidadeObjeto1 = Double.valueOf(JOptionPane.showInputDialog(null, "Digite de 0 a 5 Para Qualidade do(a): "+nomeObjeto1));
-                    double avaliacaoObjeto1 = Double.valueOf(JOptionPane.showInputDialog(null, "Digite de 0 a 5 Para Avaliação do(a): "+nomeObjeto1));
-                    double notaObjeto1 = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite de 0 a 5 Para a Nota do(a): "+nomeObjeto1));
+                    double qualidadeObjeto1 = Double.valueOf(JOptionPane.showInputDialog(null, "Digite de 0 a 5 para Qualidade do(a):"+nomeObjeto1));
+                    double avaliacaoObjeto1 = Double.valueOf(JOptionPane.showInputDialog(null, "Digite de 0 a 5 para avaliação do(a):"+nomeObjeto1));
+                    double notaObjeto1 = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite de 0 a 5 para a Nota do(a):"+nomeObjeto1));
                     TabelaDAO.inserirCriterioNoBanco(qualidadeObjeto1,avaliacaoObjeto1,notaObjeto1);
 
                     //INSERIR OS PESOS NA TABELA PESOS
-                    double pesoqualidade = Double.valueOf(JOptionPane.showInputDialog(null, "Digite o Peso de 0 a 3 Para Qualidade"));
-                    double pesoavaliacao = Double.valueOf(JOptionPane.showInputDialog(null, "Digite o Pesos de 0 a 3 Para Avaliação"));
-                    double pesonota = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite o Pesos de 0 a 3 Para a Nota:"));
+                    double pesoqualidade = Double.valueOf(JOptionPane.showInputDialog(null, "Digite o Peso de 0 a 3 para Qualidade"));
+                    double pesoavaliacao = Double.valueOf(JOptionPane.showInputDialog(null, "Digite o Pesos de 0 a 3 para avaliação"));
+                    double pesonota = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite o Pesos de 0 a 3 para a Nota:"));
 
-                   TabelaDAO.inserirPesosNoBanco(pesoqualidade,pesoavaliacao,pesonota);
+                    TabelaDAO.inserirPesosNoBanco(pesoqualidade,pesoavaliacao,pesonota);
 
 
                     //INSERIR O OBJETO  NA TABELA( OBJETO2)
-                    String nomeObjeto2 = JOptionPane.showInputDialog(null, "Digite o Nome do Segundo Objeto:");
+                    String nomeObjeto2 = JOptionPane.showInputDialog(null, "Digite o nome do Segundo objeto:");
                     objeto = new Objeto(nomeObjeto2);
                     TabelaDAO.inserirObjetoNoBanco(objeto);
 
                     // INSERIR OS CRITERIOS NA TABELA DE CRITERIO( OBJETO2)
-                    double qualidadeObjeto2 = Double.valueOf(JOptionPane.showInputDialog(null, "Digite de 0 a 5 Para Qualidade do(a): "+nomeObjeto2));
-                    double avaliacaoObjeto2 = Double.valueOf(JOptionPane.showInputDialog(null, "Digite de 0 a 5 Para Avaliação do(a): "+nomeObjeto2));
-                    double notaObjeto2 = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite de 0 a 5 Para a Nota do(a): "+nomeObjeto2));
+                    double qualidadeObjeto2 = Double.valueOf(JOptionPane.showInputDialog(null, "Digite de 0 a 5 para Qualidade do(a):"+nomeObjeto2));
+                    double avaliacaoObjeto2 = Double.valueOf(JOptionPane.showInputDialog(null, "Digite de 0 a 5 para avaliação do(a):"+nomeObjeto2));
+                    double notaObjeto2 = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite de 0 a 5 para a Nota do(a):"+nomeObjeto2));
 
                     TabelaDAO.inserirCriterioNoBanco(qualidadeObjeto2,avaliacaoObjeto2,notaObjeto2);
 
@@ -665,11 +665,11 @@ public class InterfaceGrafica extends JFrame {
 
                     // Comparar os resultados e exibir mensagem
                     if (resultadoObjeto1 > resultadoObjeto2) {
-                        JOptionPane.showMessageDialog(null, "O(a) " + nomeObjeto1 +", Obteve o Resultado de = "+ resultadoObjeto1+ "\nO(a) " + nomeObjeto2 + " ,Obteve o Resultado de = "+resultadoObjeto2+"\nPortanto: O(a) "  +nomeObjeto1+ " , e Melhor.");
+                        JOptionPane.showMessageDialog(null, "O(a) " + nomeObjeto1 +",Obteve o Resulstdado de = "+ resultadoObjeto1+ "\nO(a) " + nomeObjeto2 + "Obteve o Resultado de ="+resultadoObjeto2+"\nPortanto: O(a) "  +nomeObjeto1+ " e Melhor");
                     } else if (resultadoObjeto2 > resultadoObjeto1) {
-                        JOptionPane.showMessageDialog(null, "O(a) " + nomeObjeto2 + ", Obteve o Resulstdado de = "+resultadoObjeto2+ "\nO(a) "+ nomeObjeto1 + " ,Obteve o Resultado de = " + resultadoObjeto1+"\nPortanto: O(a) "  +nomeObjeto2+ " , e Melhor.");
+                        JOptionPane.showMessageDialog(null, "O(a) " + nomeObjeto2 + ",Obteve o Resulstdado de = "+resultadoObjeto2+ "\nO(a) "+ nomeObjeto1 + "Obteve o Resultado de =" + resultadoObjeto1+"\nPortanto: O(a) "  +nomeObjeto2+ " e Melhor");
                     } else {
-                        JOptionPane.showMessageDialog(null, "O(a) " + nomeObjeto1 +", Obteve o Resulstdado de = "+ resultadoObjeto1+ "\nO(a) " + nomeObjeto2 + " ,Obteve o Resultado de = "+resultadoObjeto2+"\nPortanto: O(a)" + nomeObjeto1 + ", e " + nomeObjeto2 + " , São iguais.");
+                        JOptionPane.showMessageDialog(null, "O(a) " + nomeObjeto1 +",Obteve o Resulstdado de = "+ resultadoObjeto1+ "\nO(a) " + nomeObjeto2 + "Obteve o Resultado de ="+resultadoObjeto2+"\nPortanto: O(a)" + nomeObjeto1 + " e " + nomeObjeto2 + " São iguais");
                     }
 
 
