@@ -1,0 +1,30 @@
+CREATE DATA BASE TESTE01
+
+create table objeto(
+id serial primary key,
+nome varchar(150)not null
+);
+
+create table criterio(
+id serial primary key,
+qualidade decimal(2,1) not null,
+avaliacao decimal(2,1) not null,
+nota decimal(2,1) not null
+);
+
+
+create table pesos(
+id serial primary key,
+pesoqualidade decimal(2,1)not null,
+pesoavaliacao decimal(2,1)not null,
+pesonota decimal(2,1) not null
+);
+
+create table comparacao(
+id serial primary key,
+nome_objeto varchar(200),
+id_objeto int references objeto(id),
+id_criterio int references criterio(id),
+Id_pesos int references pesos(id),
+resultado decimal (4,2)not null
+);
