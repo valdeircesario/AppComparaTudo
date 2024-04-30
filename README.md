@@ -56,3 +56,11 @@ Siga as etapas abaixo para executar o aplicativo em sua máquina local:
 
 ```bash
 git clone https://github.com/valdeircesario/AppComparaTudo.git
+
+2. Baixe a pasta do repositorio postgressql:
+3. Copie essa basta do codigo do banco de dados nos PJADMIM:
+4. Confira o ascesso do seu banco ( a senha deve ser as sua , troque onde por 201918 pela sua senha):
+5. Abra o codigo clonado na sua IDEA ( Intellij):
+6 Pronto. ja e para o codigo rodar.
+
+#obrigado
