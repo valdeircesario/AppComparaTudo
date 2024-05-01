@@ -38,6 +38,17 @@ _**Figura 4:** Tela de compararcão dos objetos._
 
 Durante o desenvolvimento do AppComparaTudo, foram utilizadas as seguintes ferramentas:
 
+<div style="display: inline_block"><br>
+        
+  
+  <img align="center" alt="VAL-Java" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg">
+  <img align="center" alt="VAL-postgresql" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" >
+  <img  align="center" alt="VAL-intelij" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" >
+
+  
+</div>
+<P></P>
+
 - Banco de dados PostgreSQL com o cliente pgAdmin para gerenciamento e administração.
 - IDE IntelliJ IDEA para desenvolvimento Java.
 
