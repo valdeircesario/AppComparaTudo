@@ -665,11 +665,19 @@ public class InterfaceGrafica extends JFrame {
 
                     // Comparar os resultados e exibir mensagem
                     if (resultadoObjeto1 > resultadoObjeto2) {
+<<<<<<< HEAD
                         JOptionPane.showMessageDialog(null, "O(a), " + nomeObjeto1 +" Obteve o Resultado de = "+ resultadoObjeto1+ "\nO(a), " + nomeObjeto2 + " Obteve o Resultado de ="+resultadoObjeto2+"\nPortanto: O(a), "  +nomeObjeto1+ " e Melhor");
                     } else if (resultadoObjeto2 > resultadoObjeto1) {
                         JOptionPane.showMessageDialog(null, "O(a), " + nomeObjeto2 + " Obteve o Resultado de = "+resultadoObjeto2+ "\nO(a), "+ nomeObjeto1 + " Obteve o Resultado de =" + resultadoObjeto1+"\nPortanto: O(a), "  +nomeObjeto2+ " e Melhor");
                     } else {
                         JOptionPane.showMessageDialog(null, "O(a), " + nomeObjeto1 +" Obteve o Resultado de = "+ resultadoObjeto1+ "\nO(a), " + nomeObjeto2 + " Obteve o Resultado de ="+resultadoObjeto2+"\nPortanto: O(a), " + nomeObjeto1 + " e o " + nomeObjeto2 + " São iguais");
+=======
+                        JOptionPane.showMessageDialog(null, "O(a) " + nomeObjeto1 +",Obteve o Resulstdado de = "+ resultadoObjeto1+ "\nO(a) " + nomeObjeto2 + "Obteve o Resultado de ="+resultadoObjeto2+"\nPortanto: O(a) "  +nomeObjeto1+ " e Melhor");
+                    } else if (resultadoObjeto2 > resultadoObjeto1) {
+                        JOptionPane.showMessageDialog(null, "O(a) " + nomeObjeto2 + ",Obteve o Resulstdado de = "+resultadoObjeto2+ "\nO(a) "+ nomeObjeto1 + "Obteve o Resultado de =" + resultadoObjeto1+"\nPortanto: O(a) "  +nomeObjeto2+ " e Melhor");
+                    } else {
+                        JOptionPane.showMessageDialog(null, "O(a) " + nomeObjeto1 +",Obteve o Resulstdado de = "+ resultadoObjeto1+ "\nO(a) " + nomeObjeto2 + "Obteve o Resultado de ="+resultadoObjeto2+"\nPortanto: O(a)" + nomeObjeto1 + " e " + nomeObjeto2 + " São iguais");
+>>>>>>> 62c6d6ce14b7bea668c843140aa15dfc9c7e9a15
                     }
 
 
