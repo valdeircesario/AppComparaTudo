@@ -538,7 +538,7 @@ public class TabelaDAO {
 
             return "O(a): " + nomeObjeto1 + " tem um Resultado de :" + resultadoObjeto1 + ".\n" +
                     "O(a): " + nomeObjeto2 + " tem um Resultado de :" + resultadoObjeto2 + ".\n" +
-                    "Portanto O(a):" + nomeObjeto1 + "E Melhor.";
+                    "Portanto O(a): " + nomeObjeto1 + "E Melhor.";
 
         } else if (resultadoObjeto1 < resultadoObjeto2) {
             return "O(a): " + nomeObjeto2 + " tem um Resultado de :" + resultadoObjeto2 + ".\n" +
