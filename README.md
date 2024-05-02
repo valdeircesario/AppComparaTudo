@@ -1,8 +1,10 @@
 # AppComparaTudo
 
-
-
 AppComparaTudo é um aplicativo desenvolvido como parte de um trabalho de semestre na faculdade. Ele permite manipular dados em um banco de dados PostgreSQL e foi implementado usando a linguagem Java com uma interface gráfica simples usando Swing.
+
+# Objetivo
+
+O objetivo deste programa é auxiliar as pessoas em uma dúvida comum nos dias atuais: comparar itens ou objetos para determinar qual é mais vantajoso ou melhor. Para isso, o sistema analisa diversos critérios previamente definidos, atribuindo pesos a cada um desses critérios. Com base nesses pesos, o programa realiza um cálculo que gera uma média ponderada para cada objeto comparado. Assim, o objeto que obtiver a maior média ponderada será considerado o melhor e mais indicado. Caso os resultados sejam iguais, ambos os objetos serão considerados igualmente vantajosos.
 
 ## Recursos
 
